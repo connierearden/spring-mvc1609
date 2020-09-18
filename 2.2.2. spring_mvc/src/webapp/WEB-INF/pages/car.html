@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Car</title>
+    <style>
+        table th, table td {padding: 5px;}
+    </style>
+</head>
+
+<body>
+
+<div style="text-align: right;padding:5px;margin:5px 0px;background:#ccc;">
+    <a th:href="@{/cars?lang=en}">Login (English)</a>
+    &nbsp;|&nbsp;
+    <a th:href="@{/cars?lang=ru}">Login (Русский)</a>
+    &nbsp;|&nbsp;
+</div>
+
+<strong th:utext="#{label.title}"></strong>
+
+<table border="1">
+    <tr>
+        <th>No</th>
+        <th>Full Name</th>
+        <th>Email</th>
+    </tr>
+
+    <tr th:each="car : ${cars}">
+        <td th:utext="${car.name}">Name</td>
+        <td th:utext="${car.series}">series</td>
+        <td th:utext="${car.status}">status</td>
+    </tr>
+</table>
+
+</body>
+</html>

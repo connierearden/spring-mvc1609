@@ -36,6 +36,35 @@
             <version>3.0.9.RELEASE</version>
         </dependency>
 
+        <!--тоже добавлял-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.15</version>
+        </dependency>
+
+        <!--тоже добавлял-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.10.Final</version>
+        </dependency>
+
+        <!--для работы с классом AppConfig-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.6.RELEASE</version>
+        </dependency>
+        <!--// для работы с классом AppConfig-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>5.2.6.RELEASE</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
